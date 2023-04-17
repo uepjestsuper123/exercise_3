@@ -16,3 +16,19 @@ studenci = ["Ania", "Kuba", "Piotr", "Jan"]
 # oczekiwany rezultat: Liczba studentow wynosi: 4
 liczba_studentow = len(studenci)
 print("Liczba studentow wynosi: ", liczba_studentow)
+
+# zadanie 1.4 - za pomoca petli i print przywitaj sie z kazdym studentem z tabeli studenci osobno
+studenci = ["Ania", "Kasia", "Piotr", "Tomek"]
+
+# za pomoca petli i print przywitaj sie z kazdym studentem
+for x in range(liczba_studentow):
+    print("Hello "+studenci[x])
+
+# zadanie 1.5
+
+liczba = 3
+potega = 4
+
+wynik = pow(liczba,potega)
+
+print("Wynik wynosi: ",wynik)
