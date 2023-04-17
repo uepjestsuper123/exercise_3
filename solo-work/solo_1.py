@@ -57,3 +57,13 @@ studenci.sort(key=lambda name: name.split(" ")[-1].lower())
 print("Alfabetyczna lista studentow wynosi: ")
 for student in studenci:
     print(student)
+
+# zadanie 1.9
+
+studenci = ["Anna Szczesny", "Tomasz Nijaki", "Barbara Kowalska", "Jan Niezbedny"]
+studentN = 0
+
+for student in studenci:
+    if student.split(" ")[-1].lower().startswith("n"):
+        studentN += 1
+print("Liczba studentow na N wynosi: ",studentN)
