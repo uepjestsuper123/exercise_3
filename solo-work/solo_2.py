@@ -57,11 +57,14 @@ student_gordie.dodaj_ocene (4.5)
 student_gordie.dodaj_ocene (5)
 
 class Mieszkanie:
-    def __init__(self, adres, rodzaj, metraz, czynsz):
+    def __init__(self, adres, rodzaj, metraz, czynsz, pietro, ogrod, pokoje):
         self.adres = adres
         self.rodzaj = rodzaj
         self.metraz = metraz
         self.czynsz = czynsz
+        self.pietro = pietro
+        self.ogrod = ogrod
+        self.pokoje = pokoje
 
     def __str__(self):
         return f"{self.adres} - {self.rodzaj}. Miesięczny czynsz za to mieszkanie wynosi: {self.czynsz} złotych, a jego powierzchnia to {self.metraz} metrów kwadratowych."
@@ -75,7 +78,7 @@ class Mieszkanie:
     def obniz_czynsz(self):
         self.czynsz = self.czynsz*0.8
 
-mieszkanie_Jacoba = Mieszkanie("Łączna 43, Lipinki Łużyckie", "Kawalerka", "40", 2345)
+mieszkanie_Jacoba = Mieszkanie("Łączna 43, Lipinki Łużyckie", "Kawalerka", 40, 2345, 2, "nie", 3)
 
 #print(trojkat_rownoboczny.obwod())
 #print(trojkat_antka.pole())
