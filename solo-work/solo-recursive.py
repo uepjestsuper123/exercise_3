@@ -15,3 +15,14 @@ array = [4, 9, 2, 6, 1, 8, 54, 7]
 max_value = find_max(array)
 print("Maximum value:", max_value)
 
+def sum_of_list(lst):
+    sum_of_numbers = lst[0] #jako sumę ustalamy wartość pierwszego elementu
+    lst.pop(0) #usuwamy pierwszy element z listy
+    if(len(lst)> 0): #sprawdzamy czy lista ma jeszcze jakieś elementy
+        return (sum_of_numbers + sum_of_list(lst)) #jeśli tak: dodajemy kolejny element z listy do sumy i wracamy do początku
+    else:
+        return sum_of_numbers #jeśli nie: zwracamy sumę
+
+list = [5, 4, 4, 4, 1]
+result = sum_of_list(list)
+print("The sum of the list is:", result)
