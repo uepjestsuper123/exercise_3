@@ -24,5 +24,15 @@ def sum_of_list(lst):
         return sum_of_numbers #jeśli nie: zwracamy sumę
 
 list = [5, 4, 4, 4, 1]
-result = sum_of_list(list)
-print("The sum of the list is:", result)
+list = sum_of_list(list)
+print("The sum of the list is:", list)
+
+def factorial(n):
+    if n == 0:
+        return 1 #dla n równego 0 zwracamy 1 
+    else:
+        return n * factorial(n - 1) #w przeciwnym wypadku zwracamy n razy silnia z n-1
+
+number = 6
+n_factorial = factorial(number)
+print(f"The factorial of {number} is: {n_factorial}")
