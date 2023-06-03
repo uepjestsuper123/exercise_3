@@ -36,3 +36,17 @@ def factorial(n):
 number = 6
 n_factorial = factorial(number)
 print(f"The factorial of {number} is: {n_factorial}")
+
+def fibonacci(n):
+    if n <= 0:
+        return [] #dla n=0 zwracamy pustą listę
+    elif n == 1:
+        return [0, 1] # dla n=1 zwracamy jednoelementową listę
+    else:
+        sequence = fibonacci(n - 1)
+        sequence.append(sequence[-1] + sequence[-2])
+        return sequence #w innych wypadku ustalamy sekwencję dla n-1, a następnie dodajemy do listy sumę dwóch poprzednich elementów
+
+number2 = 5
+fibo = fibonacci(number2)
+print(f"The Fibonacci sequence {number2} is: {fibo}")
